@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayoutSetPID">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editTextP"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="P"
+            />
+        <Button
+            android:id="@+id/buttonSendP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送P"
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <EditText
+           android:id="@+id/editTextI"
+           android:layout_width="70dp"
+           android:layout_height="wrap_content"
+           android:hint="I"
+           />
+       <Button
+           android:id="@+id/buttonSendI"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="发送I"
+           />
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextD"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="D"
+            />
+
+        <Button
+            android:id="@+id/buttonSendD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送D"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextIThreshold"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="I阈值"
+            />
+        <Button
+            android:id="@+id/buttonSendIThreshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送I阈值"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSetPIDReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+
+</LinearLayout>

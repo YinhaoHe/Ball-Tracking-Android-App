@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayoutSetRange">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radioButtonDoNothing"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:text="空点击事件" />
+        <RadioButton
+            android:id="@+id/radioButtonLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="导轨左侧" />
+        <RadioButton
+            android:id="@+id/radioButtonRight"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="导轨右侧" />
+        <RadioButton
+            android:id="@+id/radioButtonBall"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="小球" />
+    </RadioGroup>
+
+
+    <CheckBox
+        android:id="@+id/checkBoxPickColor"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="拾取颜色"
+        android:enabled="false"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/textViewH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:textSize="10dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/textViewS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:textSize="10dp"
+        android:text=""
+        />
+    <TextView
+        android:id="@+id/textViewV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:textSize="10dp"
+        android:text=""
+        />
+    <Button
+        android:id="@+id/buttonSetRangeReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="返回" />
+    <Button
+        android:id="@+id/buttonUseLastHSV"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="应用上次颜色"
+        android:visibility="invisible"/>
+
+
+
+
+</LinearLayout>

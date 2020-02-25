@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:id="@+id/zaizai1_activity_java_surface_view"
+        opencv:show_fps="true"
+        opencv:camera_id="any" />
+
+    <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/linearLayout">
+        <Button
+            android:id="@+id/buttonSetRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="范围框定"
+             />
+        <Button
+            android:id="@+id/buttonBlueToothConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙连接"
+            />
+
+        <Button
+            android:id="@+id/buttonSetPID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设定PID"
+            android:enabled="false"
+             />
+
+        <Button
+            android:id="@+id/buttonDataTransControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据传输控制"
+            android:enabled="false"
+             />
+
+        <CheckBox
+            android:id="@+id/checkBoxWideAngleErrorFix"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="广角位置修正"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp">
+
+        <TextView
+            android:id="@+id/textViewLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#0000FF"
+            android:text="导轨左:(xxxx,xxxx)"/>
+        <TextView
+            android:id="@+id/textViewRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#0000FF"
+            android:text="导轨右:(xxxx,xxxx)" />
+        <TextView
+            android:id="@+id/textViewBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#0000FF"
+            android:text="小球:(xxxx,xxxx)" />
+        <TextView
+            android:id="@+id/textViewPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0000FF"
+            android:textSize="10dp"
+            android:text="位置:" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFF00"
+        android:textSize="10dp"
+        android:text=""
+        />
+
+
+</RelativeLayout>

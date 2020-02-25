@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayoutDataTransControl">
+
+    <Button
+        android:id="@+id/buttonStartSendPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="开始发送位置"
+        />
+    <Button
+        android:id="@+id/buttonStopSendPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="停止发送位置"
+        android:enabled="false"
+        />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/editTextTargetPosition"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:hint="目标"
+        />
+    <Button
+        android:id="@+id/buttonSetTargetPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/editTextTargetPosition"
+        android:text="设定"/>
+
+
+    <EditText
+        android:id="@+id/editTextStep"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:hint="步数"
+        android:layout_below="@id/editTextTargetPosition"
+        />
+    <Button
+        android:id="@+id/buttonForeward"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/buttonSetTargetPosition"
+        android:layout_toRightOf="@id/editTextStep"
+        android:text="正转"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/editTextStep"
+        android:text="清零"/>
+    <Button
+        android:id="@+id/buttonReverse"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/buttonForeward"
+        android:layout_toRightOf="@id/buttonClear"
+        android:text="反转"/>
+
+    <EditText
+        android:id="@+id/editTextInstruction"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:hint="指令"
+        android:layout_below="@id/buttonClear"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:hint="数据"
+        android:layout_below="@id/editTextInstruction"
+        />
+    <Button
+        android:id="@+id/buttonEmergencySend"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/buttonReverse"
+        android:layout_toRightOf="@id/editTextInstruction"
+        android:text="指令发送" />
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonDataTransControlReturn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+
+</LinearLayout>
